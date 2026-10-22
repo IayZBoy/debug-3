@@ -35,7 +35,7 @@ require_once '../includes/header.php';
 
                             <?php if ($message['publishedAt'] !== ''): ?>
                                 <p class="card-subtitle mb-3 text-body-secondary small">
-                                    <?= htmlspecialchars($message['publishedAt'], ENT_QUOTES, 'UTF-8'); ?>
+                                    <?= date('l d M Y H:i');strtotime($message['publishedAt']) ?>
                                 </p>
                             <?php endif; ?>
 
