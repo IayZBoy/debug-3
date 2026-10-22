@@ -11,7 +11,6 @@ $messages = $messageController->getLatestMessages(5);
 
 require_once '../includes/header.php';
 ?>
-    <link rel="stylesheet" href="style.css">
     <div class="container">
         <div class="row justify-content-center mb-4">
             <div class="col-lg-8 text-center">
