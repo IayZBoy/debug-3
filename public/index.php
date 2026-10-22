@@ -25,14 +25,7 @@ require_once '../includes/header.php';
         </div>
 
         <div class="row g-4">
-            <?php for ($i = 0; $i < count($messages); $i++):
-                 $message = $messages[$i] ?? [
-                    'title' => 'Geen titel beschikbaar',
-                    'link' => '#',
-                    'description' => 'Geen beschrijving beschikbaar',
-                    'publishedAt' => '',
-                 ];
-                ?>
+            <?php foreach ($messages as $message): ?>
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body d-flex flex-column">
@@ -58,7 +51,7 @@ require_once '../includes/header.php';
                         </div>
                     </div>
                 </div>
-            <?php endfor; ?>
+            <?php endforeach; ?>
         </div>
     </div>
 
